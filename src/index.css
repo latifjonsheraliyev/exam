@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+ /* Style for breadcrumb start */
+.breadcrumb {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+  }
+  .breadcrumb-item {
+    text-transform: capitalize;
+  }
+  .breadcrumb-item + .breadcrumb-item:before {
+    content: '>';
+    margin: 0 8px;
+  }
+  
+.active-page {
+    color: #0C68F4;
+    
+   
+  }
+  /* Style for breadcrumb end */
+
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Hide scrollbar for IE and Edge */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+   /* For Internet Explorer and Edge */
+}
+.active {
+  @apply text-blue-400  font-semibold  text-lg;
+}
+
+.default {
+  @apply text-black  font-light  text-lg;
+}
+
+.productOnSell {
+  background-image: url("./assets/images/banner/product-on-sell.png");
+  background-repeat: no-repeat;
+  /* height: 435.65px; */
+  /* width: 500.44px; */
+  position: absolute;
+  top: -3.6px;
+  left: 1px;
+  rotate: -100.63°;
+}
+
+.swiper {
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.swiper-slide img {
+  /* display: block; */
+  /* width: 100%; */
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+/* spinner styl */
+
+
